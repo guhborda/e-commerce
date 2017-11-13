@@ -1,0 +1,123 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: white;
+	width: 100%;
+	height: 100%;
+}
+header{
+	
+	/*max-width: 960px;*/
+
+	height: 190px;
+	display: block;
+	clear: both;
+}
+
+header .head{
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	height: 140px;
+
+
+	background-color: #ccc;
+	clear: both;
+}
+
+header .head .logo{
+	float: left;
+	display: inline-block;
+	max-width: 187px;
+
+	margin-left: 90px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%); 
+}
+
+header .head .logo h2{
+	font-size: 50px;
+	text-align: center;
+}
+header .head .logo h2 span{
+	display: block;
+	text-align: center;
+}
+
+header .head .account{
+	float: right;
+	position: relative;
+	top: 50%;
+	right: 50px;
+	transform: translateY(-50%);
+	font-size: 18px;
+	height: 100%;
+	width: 200px;
+	justify-content: center;
+
+}
+
+header .head .account div{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+header .head .account div .logged{
+	float: left;
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	left: 50px;
+	transform: translateY(-50%);
+	clear: both;
+	cursor: pointer;
+}
+
+header .head .account div .logged .img_profile{
+	    position: relative;
+    float: left;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    /* left: 0; */
+    height: 30px;
+}
+header .head .account div .logged p{
+	left: 10px;
+    position: relative;
+    float: left;
+    top: 5px;
+}
+
+
+
+
+header .head .account div .cart{
+	float: left;
+	display: inline-block;
+	margin: 0 10px;
+	position: relative;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	font-size: 30px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 960px ){
+	header .head .account{
+		display: none;
+	}
+
+	header .head .logo{
+		margin-left: 0;
+		width: 100%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+}
