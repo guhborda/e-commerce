@@ -123,7 +123,7 @@ nav > ul {
 	margin: 0;
 	display: inline-block;
 	background: #ddd;
-	border-radius: 5px;
+
 }
 nav > ul > li {
 display: inline-block;
@@ -136,15 +136,18 @@ display: inline-block;
   color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
 }
+nav > ul > li.active{
+	border-bottom: 1px solid #00b388;
+}
 nav > ul > li:hover {
 
-  border-radius: 5px;
+
   border-bottom: 1px solid #00b388;
 }
 
 ul.drop-menu {
   position: absolute;
-  top: 100%;
+  top: 103%;
   left: 0%;
   width: 100%;
   padding: 0;
