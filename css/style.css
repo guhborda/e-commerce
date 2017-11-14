@@ -10,7 +10,7 @@ body{
 header{
 	
 	/*max-width: 960px;*/
-
+	width: 100%;
 	height: 190px;
 	display: block;
 	clear: both;
@@ -21,7 +21,7 @@ header .head{
 	display: block;
 	position: relative;
 	height: 140px;
-
+	max-width: 960px;
 
 	background-color: #ccc;
 	clear: both;
@@ -108,6 +108,67 @@ header .head .account div .cart{
 	font-size: 30px;
 	cursor: pointer;
 }
+
+
+/*----Navbar-----*/
+
+
+nav {
+  text-align: center;
+}
+nav > ul {
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	background: #ddd;
+	border-radius: 5px;
+}
+nav > ul > li {
+display: inline-block;
+  width: 150px;
+  height: 65px;
+  line-height: 65px;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+nav > ul > li:hover {
+
+  border-radius: 5px;
+  border-bottom: 1px solid #00b388;
+}
+
+ul.drop-menu {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  padding: 0;
+}
+ul.drop-menu li {
+  background: #666;
+  color: rgba(255, 255, 255, 0.7);
+}
+ul.drop-menu li:hover {
+  background: #606060;
+}
+ul.drop-menu li:last-child {
+  border-radius: 0px 0px 5px 5px;
+}
+
+ul.drop-menu li {
+  display: none;
+}
+
+li:hover > ul.drop-menu li {
+  display: block;
+}
+
+
 
 @media screen and (max-width: 960px ){
 	header .head .account{
